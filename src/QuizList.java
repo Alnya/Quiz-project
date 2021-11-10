@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class QuizList {
-    private List<Quiz> quizList = new ArrayList<Quiz>();
+    private final List<Quiz> quizList = new ArrayList<Quiz>();
 
     public QuizList() {
 
