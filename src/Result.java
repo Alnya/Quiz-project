@@ -22,6 +22,19 @@ public class Result {
     }
 
     public int score() {
-        return 0;
+        try {
+            int score = 0;
+            for (int i = 0; i < this.selectedQuizList.size(); i++) {
+                Quiz quiz = selectedQuizList.get(i);
+                String answer = answers.get(i);
+                if (quiz.getCorrectAnswer().equals(answer)) {
+                    score++;
+                }
+            }
+            return score;
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("Error! Can't call this method now...");
+            return 0;
+        }
     }
 }
