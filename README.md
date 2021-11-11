@@ -12,6 +12,7 @@
 │
 ├─.idea
 │      .gitignore
+│      encodings.xml
 │      misc.xml
 │      modules.xml
 │      runConfigurations.xml
@@ -19,6 +20,7 @@
 │      workspace.xml
 │
 └─src
+        Cls.java
         Main.java
         Printable.java
         PrintableQuiz.java
