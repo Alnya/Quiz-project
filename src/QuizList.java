@@ -8,6 +8,10 @@ public class QuizList {
 
     }
 
+    public void addQuiz(Quiz quiz) {
+        this.quizList.add(quiz);
+    }
+
     public Quiz getQuiz(int index) {
         return this.quizList.get(index);
     }
