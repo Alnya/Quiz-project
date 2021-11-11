@@ -21,7 +21,7 @@ public class Result {
 
     }
 
-    public int score() {
+    public int getScore() {
         try {
             int score = 0;
             for (int i = 0; i < this.selectedQuizList.size(); i++) {
