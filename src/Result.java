@@ -9,6 +9,14 @@ public class Result {
 
     }
 
+    public void addSelectedQuiz(Quiz quiz) {
+        this.selectedQuizList.add(quiz);
+    }
+
+    public void addAnswer(String answer) {
+        this.answers.add(answer);
+    }
+
     public void printResult() {
 
     }
