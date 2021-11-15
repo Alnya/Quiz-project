@@ -7,9 +7,7 @@ import java.nio.file.Paths;
 public class ReadFiles {
     public static String readProblem(int index) {
         String pathName = "../problems/" + String.format("%03d", index);
-        Path path = Paths.get(pathName);
-        Charset charset = Charset.forName("Windows-31J");
-        return readAll(path, charset);
+        return read(pathName);
     }
 
     private static String read(String pathName) {
