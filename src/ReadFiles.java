@@ -12,6 +12,12 @@ public class ReadFiles {
         return readAll(path, charset);
     }
 
+    private static String read(String pathName) {
+        Path path = Paths.get(pathName);
+        Charset charset = Charset.forName("Windows-31J");
+        return readAll(path, charset);
+    }
+
     private static String readAll(Path path, Charset charset) {
         try {
             return new String(Files.readAllBytes(path), charset);
