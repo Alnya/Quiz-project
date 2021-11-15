@@ -5,7 +5,18 @@ public class PrintableQuiz implements Printable {
         this.quiz = quiz;
     }
 
-    public void print() {
+    public void printName() {
+    }
 
+    public void printProblem() {
+    }
+
+    public void printExplanation() {
+    }
+
+    public void printCorrectAnswer() {
+    }
+
+    public void print() {
     }
 }
