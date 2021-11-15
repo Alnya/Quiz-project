@@ -15,6 +15,11 @@ public class ReadFiles {
         return read(pathName);
     }
 
+    public static String readCorrectAnswer(int index) {
+        String pathName = "../correct-answers/" + String.format("%03d", index);
+        return read(pathName);
+    }
+
     private static String read(String pathName) {
         Path path = Paths.get(pathName);
         Charset charset = Charset.forName("Windows-31J");
