@@ -10,6 +10,11 @@ public class ReadFiles {
         return read(pathName);
     }
 
+    public static String readExplanation(int index) {
+        String pathName = "../explanations/" + String.format("%03d", index);
+        return read(pathName);
+    }
+
     private static String read(String pathName) {
         Path path = Paths.get(pathName);
         Charset charset = Charset.forName("Windows-31J");
