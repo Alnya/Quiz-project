@@ -4,7 +4,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class ReadFiles {
-    public static String readAll(Path path, Charset charset) {
+    private static String readAll(Path path, Charset charset) {
         try {
             return new String(Files.readAllBytes(path), charset);
         } catch (IOException e) {
