@@ -1,0 +1,23 @@
+1.以下のようなコードがあります。
+
+Test.java
+    public class Test{
+        public static void main(String[] args){
+            print();
+        }
+        public void print() {
+            System.out.println("Hello_world");
+        }
+    }
+
+コンソールに
+Hello_world
+と表示させたいのですが、このコードは3行目でコンパイルエラーになります。
+正しく実行できるようにするためにはコードをどのように修正すればよいですか。
+[選択肢]から1つ選んでください。
+
+[選択肢]
+A) main()をstaticでないメゾットにする。
+B) print()をstaticなメゾットにする。
+C) 3行目のprint()をthis.print()に変更する。
+D) 3行目のprint()をTest.print()に変更する。
