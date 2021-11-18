@@ -11,7 +11,7 @@ public class ReadFiles {
     }
 
     public static String readExplanation(int index) {
-        String pathName = "../explanations/" + String.format("%03d", index);
+        String pathName = String.format("../explanations/%03d.txt", index);
         return read(pathName);
     }
 
