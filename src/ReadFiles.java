@@ -16,7 +16,7 @@ public class ReadFiles {
     }
 
     public static String readCorrectAnswer(int index) {
-        String pathName = "../correct-answers/" + String.format("%03d", index);
+        String pathName = String.format("../correct-answers/%03d.txt", index);
         return read(pathName);
     }
 
