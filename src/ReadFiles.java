@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 
 public class ReadFiles {
     public static String readProblem(int index) {
-        String pathName = "../problems/" + String.format("%03d", index);
+        String pathName = String.format("../problems/%03d.txt", index);
         return read(pathName);
     }
 
