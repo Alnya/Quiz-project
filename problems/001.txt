@@ -1,14 +1,14 @@
-1.以下のようなコードがあります。
+問題1.以下のようなコードがあります。
 
-Test.java
-    public class Test{
-        public static void main(String[] args){
-            print();
-        }
-        public void print() {
-            System.out.println("Hello_world");
-        }
+[Test.java]
+public class Test{
+    public static void main(String[] args){
+        print();
     }
+    public void print() {
+        System.out.println("Hello_world");
+    }
+}
 
 コンソールに
 Hello_world
@@ -17,7 +17,7 @@ Hello_world
 [選択肢]から1つ選んでください。
 
 [選択肢]
-A) main()をstaticでないメゾットにする。
-B) print()をstaticなメゾットにする。
+A) main()をstaticでないメソッドにする。
+B) print()をstaticなメソッドにする。
 C) 3行目のprint()をthis.print()に変更する。
 D) 3行目のprint()をTest.print()に変更する。

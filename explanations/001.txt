@@ -1,0 +1,6 @@
+問題1.解説
+
+A) ×。main()はstaticでなければなりません。
+B) 〇。staticなmain()からはstaticなメソッドしか呼び出せません。
+C) ×。staticなmain()からはTest.thisを呼び出せません。
+D) ×。同上。
