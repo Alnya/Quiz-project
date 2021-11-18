@@ -10,15 +10,35 @@ public class Main {
           read problem, correct-answer and explanation 001.txt
          */
         Cls.clear();
-        String problem001 = ReadFiles.readProblem(1);
-        String correctAnswer001 = ReadFiles.readCorrectAnswer(1);
-        String explanation001 = ReadFiles.readExplanation(1);
-        Quiz quiz001 = new Quiz(String.format("%03d", 1), problem001, explanation001, correctAnswer001);
-        println(quiz001.getProblem());
-        result.addSelectedQuiz(quiz001);
+        for (int i = 1; i <= 2; i++) {
+            String problem = ReadFiles.readProblem(i);
+            String correctAnswer = ReadFiles.readCorrectAnswer(i);
+            String explanation = ReadFiles.readExplanation(i);
+            Quiz quiz = new Quiz(String.format("%03d", i), problem, explanation, correctAnswer);
+            result.addSelectedQuiz(quiz);
+        }
+
+        for (Quiz quiz : result.getSelectedQuizList()) {
+            runQuiz(quiz);
+        }
+    }
+
+    private static void runQuiz(Quiz quiz) {
+        Cls.clear();
+        println(quiz.getProblem());
         String userAnswer = acceptUserAnswer();
         result.addAnswer(userAnswer);
-        println(result.getScore());
+        printBar();
+        if (userAnswer.equals(quiz.getCorrectAnswer())) {
+            println("\t³‰ðIZ\n");
+        } else {
+            println("\t•s³‰ð...~\n");
+        }
+        printBar();
+        println("‰ðà‚Ö [Enter]");
+        scanln();
+        printBar();
+        println(quiz.getExplanation());
         goNextProblem();
     }
 
@@ -30,11 +50,14 @@ public class Main {
     private static void goNextProblem() {
         System.out.print("\nŽŸ‚Ì–â‘è‚Ö [Enter]");
         scanln();
-        Cls.clear();
     }
 
     private static String scanln() {
         return scanner.nextLine();
+    }
+
+    private static void printBar(){
+        println("---------------------------------");
     }
 
     private static void println(Object obj) {

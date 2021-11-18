@@ -1,0 +1,16 @@
+問題2.以下のようなコードがあります。
+
+[Test.java]
+public class Test{
+    public static void main(String[] args){
+        System.out.println(5, 3);
+    }
+
+    public static int calc(int a, int b){
+        return a / b * a;
+    }
+}
+
+
+このプログラムを実行したとき、
+コンソールに出力される値を入力してください。

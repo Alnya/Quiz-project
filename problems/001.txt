@@ -17,7 +17,7 @@ Hello_world
 [選択肢]から1つ選んでください。
 
 [選択肢]
-A) main()をstaticでないメソッドにする。
-B) print()をstaticなメソッドにする。
-C) 3行目のprint()をthis.print()に変更する。
-D) 3行目のprint()をTest.print()に変更する。
+a) main()をstaticでないメソッドにする。
+b) print()をstaticなメソッドにする。
+c) 3行目のprint()をthis.print()に変更する。
+d) 3行目のprint()をTest.print()に変更する。

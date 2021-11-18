@@ -9,6 +9,14 @@ public class Result {
 
     }
 
+    public List<Quiz> getSelectedQuizList() {
+        return this.selectedQuizList;
+    }
+
+    public List<String> getAnswers() {
+        return this.answers;
+    }
+
     public void addSelectedQuiz(Quiz quiz) {
         this.selectedQuizList.add(quiz);
     }
