@@ -30,9 +30,9 @@ public class Main {
         result.addAnswer(userAnswer);
         printBar();
         if (userAnswer.equals(quiz.getCorrectAnswer())) {
-            println("\t³‰ğIZ\n");
+            println("\t³‰ğIZ");
         } else {
-            println("\t•s³‰ğ...~\n");
+            println("\t•s³‰ğ...~");
         }
         printBar();
         println("‰ğà‚Ö [Enter]");
