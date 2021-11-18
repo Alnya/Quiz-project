@@ -9,7 +9,7 @@ public class Main {
           Test program of main.
           read problem, correct-answer and explanation 001.txt
          */
-
+        Cls.clear();
         String problem001 = ReadFiles.readProblem(1);
         String correctAnswer001 = ReadFiles.readCorrectAnswer(1);
         String explanation001 = ReadFiles.readExplanation(1);
@@ -19,11 +19,18 @@ public class Main {
         String userAnswer = acceptUserAnswer();
         result.addAnswer(userAnswer);
         println(result.getScore());
+        goNextProblem();
     }
 
     private static String acceptUserAnswer() {
         System.out.print("\n“š‚¦‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢>>");
         return scanln();
+    }
+
+    private static void goNextProblem() {
+        System.out.print("\nŽŸ‚Ì–â‘è‚Ö [Enter]");
+        scanln();
+        Cls.clear();
     }
 
     private static String scanln() {
