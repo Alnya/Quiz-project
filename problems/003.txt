@@ -9,7 +9,7 @@ public class Test{
     public static int sum(int a, int b){
         int sum = 0;
         for(int i = a; i <= b; i++){
-            sum [???] 1;
+            sum [???] i;
         }
         return sum;
     }
