@@ -30,12 +30,12 @@ public class QuizListManager {
     }
 
     private static String acceptUserAnswer() {
-        System.out.print("\n“š‚¦‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢>>");
+        print("\n“š‚¦‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢>>");
         return scanln();
     }
 
     private static void goNextProblem() {
-        System.out.print("\nŽŸ‚Ì–â‘è‚Ö [Enter]");
+        print("\nŽŸ‚Ì–â‘è‚Ö [Enter]");
         scanln();
     }
 
@@ -45,6 +45,10 @@ public class QuizListManager {
 
     private static void printBar() {
         println("---------------------------------");
+    }
+
+    private static void print(Object obj) {
+        System.out.print(obj);
     }
 
     private static void println(Object obj) {
