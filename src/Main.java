@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-    private static final Result result = new Result();
+    private static Result result;
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -21,6 +21,6 @@ public class Main {
         }
 
         QuizListManager manager = new QuizListManager(quizList);
-        manager.runQuiz();
+        result = manager.runQuiz();
     }
 }
