@@ -18,11 +18,7 @@ public class QuizListManager {
             String userAnswer = acceptUserAnswer();
             result.addAnswer(userAnswer);
             printBar();
-            if (userAnswer.equals(quiz.getCorrectAnswer())) {
-                println("\t³‰ğIZ");
-            } else {
-                println("\t•s³‰ğ...~");
-            }
+            judgeAnswer(userAnswer, quiz.getCorrectAnswer());
             printBar();
             println("‰ğà‚Ö [Enter]");
             scanln();
@@ -36,6 +32,14 @@ public class QuizListManager {
     private static String acceptUserAnswer() {
         print("\n“š‚¦‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢>>");
         return scanln();
+    }
+
+    private static void judgeAnswer(String userAnswer, String correctAnswer) {
+        if (userAnswer.equals(correctAnswer)) {
+            println("\t³‰ğIZ");
+        } else {
+            println("\t•s³‰ğ...~");
+        }
     }
 
     private static void goNextProblem() {
