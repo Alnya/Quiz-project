@@ -7,7 +7,8 @@ public class Main {
     public static void main(String[] args) {
         /*
           Test program of main.
-          read problem, correct-answer and explanation 001.txt
+          read problem, correct-answer and explanation.
+          run quiz.
          */
         Cls.clear();
         for (int i = 1; i <= 2; i++) {
