@@ -1,0 +1,17 @@
+以下のコードをコンパイルし実行すると何が出力されますか。
+【選択肢】から1つ選んでください。
+
+ForTest.java
+
+public class ForTest {
+    public static void main(String[] args) {
+        for(int i=0; i<10; i++) {
+             if( i%2 == 0 ) System.out.print( i + ", " );
+        }
+    }
+}
+【選択肢】
+A) 1, 3, 5, 7,
+B) 1, 3, 5, 7, 9,
+C) 0, 2, 4, 6, 8,
+D) 0, 2, 4, 6, 8, 10,
