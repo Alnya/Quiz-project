@@ -1,0 +1,14 @@
+import java.util.Arrays;
+
+public class Q01{
+	public static void main(String[] args){
+		String[] str = {"apple", "peache", "melons", "grapes", "banana"};
+		Arrays.sort(str);
+		for(int i = 0; i < 5; i++){
+			System.out.println(str[i]);
+		}
+		
+	}
+}
+
+//Q.実行時に、3行目に表示されるのは何か？
