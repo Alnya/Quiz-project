@@ -1,0 +1,7 @@
+問題103.解説
+
+a)〇JREはJavaの実行環境で、Javaプログラムを実行するにはJREが必要である
+b)×JDK内部にJREも含まれる為、
+JDKインストール時は別途JREをインストールしなくても実行は可能です。
+c)〇JREのみではJavaの開発を行うことはできない為、JDKのインストールが必要である
+d)〇JREは「Java Runtime Environment」を略したものです
