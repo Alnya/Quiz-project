@@ -15,4 +15,8 @@ public class QuizList {
     public Quiz getQuiz(int index) {
         return this.quizList.get(index);
     }
+
+    public int size() {
+        return this.quizList.size();
+    }
 }
