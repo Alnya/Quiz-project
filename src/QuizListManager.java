@@ -10,22 +10,26 @@ public class QuizListManager {
     }
 
     public Result runQuiz() {
-        Cls.clear();
-//        println(quiz.getProblem());
-        String userAnswer = acceptUserAnswer();
-        result.addAnswer(userAnswer);
-        printBar();
-//        if (userAnswer.equals(quiz.getCorrectAnswer())) {
-//            println("\tê≥âÅIÅZ");
-//        } else {
-//            println("\tïsê≥â...Å~");
-//        }
-        printBar();
-        println("âê‡Ç÷ [Enter]");
-        scanln();
-        printBar();
-//        println(quiz.getExplanation());
-        goNextProblem();
+        for (int i = 0; i < this.quizList.size(); i++) {
+            Quiz quiz = this.quizList.getQuiz(i);
+            this.result.addSelectedQuiz(quiz);
+            Cls.clear();
+            println(quiz.getProblem());
+            String userAnswer = acceptUserAnswer();
+            result.addAnswer(userAnswer);
+            printBar();
+            if (userAnswer.equals(quiz.getCorrectAnswer())) {
+                println("\tê≥âÅIÅZ");
+            } else {
+                println("\tïsê≥â...Å~");
+            }
+            printBar();
+            println("âê‡Ç÷ [Enter]");
+            scanln();
+            printBar();
+            println(quiz.getExplanation());
+            goNextProblem();
+        }
         return this.result;
     }
 
