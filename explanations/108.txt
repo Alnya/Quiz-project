@@ -1,0 +1,9 @@
+問題108.解説
+
+a)×　system.out.println(“表示”);
+b)〇　System.out.println(“表示”);
+c)×　system,out,println(“表示”);
+d)×　System,out,println(“表示”);
+
+「S」の部分は必ず大文字で入力し、
+「.（ドット）」は「,（カンマ）」では代用できません。

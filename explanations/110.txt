@@ -1,0 +1,9 @@
+問題110.解説
+
+a)×　public static void main(string[] args){処理;}
+b)×　public void main(String[] args){処理;}
+c)×　public static void Main(String[] args){処理;}
+d)〇　public static void main(String[] args){処理;}
+
+main()メソッドは「public static void main(String[] args)」と記述する必要があり、
+大文字小文字のミス、一部記述が抜けているとコンパイルエラーとなります。
