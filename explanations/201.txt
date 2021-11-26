@@ -1,0 +1,9 @@
+問題201.解説
+
+このプログラムでは、apple,peach,melons,grapes,bananaの5つのフルーツの名前が配列で保存されています。
+このString型配列を、Javaの標準パッケージであるjava.util.Arraysでソートすると、
+
+apple,banana,grapes,melons,peach
+
+というような並び順になります。
+したがって、このプログラムを実行した時に3行目に表示されるのは「grapesという文字列になります。」
