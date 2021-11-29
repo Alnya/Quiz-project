@@ -36,11 +36,18 @@ public class QuizAllList {
     }
 
     public Result run() {
-        Random random = new Random();
-        QuizList list = this.quizAllList.get(random.nextInt(3));
-        QuizListManager manager = new QuizListManager(list);
+        Result result = new Result();
+        for (int i = 0; i < 2; i++) {
+            QuizList list = this.quizAllList.get(i);
+            QuizListManager manager = new QuizListManager(list);
+            result = manager.runQuiz();
+        }
+        return result;
+//        Random random = new Random();
+//        QuizList list = this.quizAllList.get(random.nextInt(3));
+//        QuizListManager manager = new QuizListManager(list);
 
-        return manager.runQuiz();
+//        return manager.runQuiz();
     }
 
     public void addQuizList(QuizList quizList) {
