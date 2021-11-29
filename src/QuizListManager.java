@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class QuizListManager {
@@ -10,8 +12,13 @@ public class QuizListManager {
     }
 
     public Result runQuiz() {
+        ArrayList<Integer> integerArrayList = new ArrayList<>();
         for (int i = 0; i < this.quizList.size(); i++) {
-            Quiz quiz = this.quizList.getQuiz(i);
+            integerArrayList.add(i);
+        }
+        Collections.shuffle(integerArrayList);
+        for (int i = 0; i < 5; i++) {
+            Quiz quiz = this.quizList.getQuiz(integerArrayList.get(i));
             this.result.addSelectedQuiz(quiz);
             Cls.clear();
             println(quiz.getProblem());
@@ -26,6 +33,22 @@ public class QuizListManager {
             println(quiz.getExplanation());
             goNextProblem();
         }
+//        for (int i = 0; i < this.quizList.size(); i++) {
+//            Quiz quiz = this.quizList.getQuiz(i);
+//            this.result.addSelectedQuiz(quiz);
+//            Cls.clear();
+//            println(quiz.getProblem());
+//            String userAnswer = acceptUserAnswer();
+//            result.addAnswer(userAnswer);
+//            printBar();
+//            judgeAnswer(userAnswer, quiz.getCorrectAnswer());
+//            printBar();
+//            println("‰ðà‚Ö [Enter]");
+//            scanln();
+//            printBar();
+//            println(quiz.getExplanation());
+//            goNextProblem();
+//        }
         return this.result;
     }
 
