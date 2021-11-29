@@ -39,7 +39,7 @@ public class QuizAllList {
         Random random = new Random();
         QuizList list = this.quizAllList.get(random.nextInt(3));
         QuizListManager manager = new QuizListManager(list);
-        
+
         return manager.runQuiz();
     }
 
