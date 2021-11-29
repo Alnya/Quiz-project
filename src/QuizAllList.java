@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class QuizAllList {
     private final List<QuizList> quizAllList = new ArrayList<QuizList>();
@@ -43,11 +42,6 @@ public class QuizAllList {
             result = manager.runQuiz();
         }
         return result;
-//        Random random = new Random();
-//        QuizList list = this.quizAllList.get(random.nextInt(3));
-//        QuizListManager manager = new QuizListManager(list);
-
-//        return manager.runQuiz();
     }
 
     public void addQuizList(QuizList quizList) {
