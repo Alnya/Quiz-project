@@ -6,7 +6,7 @@ public class QuizListManager {
     private final QuizList quizList;
     private final Result result;
     private static final Scanner scanner = new Scanner(System.in);
-    
+
     public QuizListManager(QuizList quizList, Result result) {
         this.quizList = quizList;
         this.result = result;

@@ -38,7 +38,7 @@ public class QuizAllList {
         Result result = new Result();
         for (int i = 0; i < 2; i++) {
             QuizList list = this.quizAllList.get(i);
-            QuizListManager manager = new QuizListManager(list);
+            QuizListManager manager = new QuizListManager(list, result);
             result = manager.runQuiz();
         }
         return result;
