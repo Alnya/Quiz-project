@@ -1,0 +1,17 @@
+public class Main {
+	public static void main(String[] args) {
+		
+		String str1 = "a";
+		String str2 = "b";
+		String str3 = "A";
+		
+		System.out.print(str1.compareTo(str2) + ",");
+		System.out.print(str2.compareTo(str1) + ",");
+		System.out.println(str1.compareTo(str1));
+	}
+}
+
+//Q.実行した場合、表示されるのは何か
+//A.-1,1,0
+
+compareToメソッドでは文字列のUnicode値がどれだけ離れているかを辞書的に比較します.compareToメソッドの戻り値は、引数で指定した文字列が辞書的に後になる場合に負の値を返します。逆に辞書的に前になる場合は正の値を返し、同じ場合は”0”を返します。
