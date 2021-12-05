@@ -24,7 +24,7 @@ public class QuizAllList {
         }
         this.quizAllList.add(quizList100);
         QuizList quizList200 = new QuizList();
-        for (int i = 201; i <= 201; i++) {
+        for (int i = 201; i <= 203; i++) {
             String problem = ReadFiles.readProblem(i);
             String correctAnswer = ReadFiles.readCorrectAnswer(i);
             String explanation = ReadFiles.readExplanation(i);
