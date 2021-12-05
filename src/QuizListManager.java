@@ -20,20 +20,35 @@ public class QuizListManager {
         Collections.shuffle(integerArrayList);
         for (int i = 0; i < 5; i++) {
             Quiz quiz = this.quizList.getQuiz(integerArrayList.get(i));
-            this.result.addSelectedQuiz(quiz);
-            Cls.clear();
-            println(quiz.getProblem());
-            String userAnswer = acceptUserAnswer();
-            result.addAnswer(userAnswer);
-            printBar();
-            judgeAnswer(userAnswer, quiz.getCorrectAnswer());
-            printBar();
-            println("‰ðà‚Ö [Enter]");
-            scanln();
-            printBar();
-            println(quiz.getExplanation());
-            goNextProblem();
+            supportRun(quiz);
         }
+        return this.result;
+    }
+
+    private void supportRun(Quiz quiz) {
+        this.result.addSelectedQuiz(quiz);
+        Cls.clear();
+        println(quiz.getProblem());
+        String userAnswer = acceptUserAnswer();
+        this.result.addAnswer(userAnswer);
+        printBar();
+        judgeAnswer(userAnswer, quiz.getCorrectAnswer());
+        printBar();
+        println("‰ðà‚Ö [Enter]");
+        scanln();
+        printBar();
+        println(quiz.getExplanation());
+        goNextProblem();
+    }
+
+    public Result runSpecialQuiz() {
+        ArrayList<Integer> integerArrayList = new ArrayList<>();
+        for (int i = 0; i < this.quizList.size(); i++) {
+            integerArrayList.add(i);
+        }
+        Collections.shuffle(integerArrayList);
+        Quiz quiz = this.quizList.getQuiz(integerArrayList.get(0));
+        supportRun(quiz);
         return this.result;
     }
 
