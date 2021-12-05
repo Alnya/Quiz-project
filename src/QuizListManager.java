@@ -34,22 +34,6 @@ public class QuizListManager {
             println(quiz.getExplanation());
             goNextProblem();
         }
-//        for (int i = 0; i < this.quizList.size(); i++) {
-//            Quiz quiz = this.quizList.getQuiz(i);
-//            this.result.addSelectedQuiz(quiz);
-//            Cls.clear();
-//            println(quiz.getProblem());
-//            String userAnswer = acceptUserAnswer();
-//            result.addAnswer(userAnswer);
-//            printBar();
-//            judgeAnswer(userAnswer, quiz.getCorrectAnswer());
-//            printBar();
-//            println("‰ðà‚Ö [Enter]");
-//            scanln();
-//            printBar();
-//            println(quiz.getExplanation());
-//            goNextProblem();
-//        }
         return this.result;
     }
 
