@@ -26,12 +26,16 @@ public class Result {
     }
 
     public void printResult() {
-        System.out.println("---総合結果---\n");
-        for (int i = 0; i < this.selectedQuizList.size(); i++) {
-            Quiz quiz = this.selectedQuizList.get(i);
-            String answer = this.answers.get(i);
-            System.out.println("問題番号" + quiz.getName());
-            System.out.println("あなたの答え：" + answer + "  正解：" + quiz.getCorrectAnswer() + "\n");
+        try {
+            System.out.println("---総合結果---\n");
+            for (int i = 0; i < this.selectedQuizList.size(); i++) {
+                Quiz quiz = this.selectedQuizList.get(i);
+                String answer = this.answers.get(i);
+                System.out.println("問題番号" + quiz.getName());
+                System.out.println("あなたの答え：" + answer + "  正解：" + quiz.getCorrectAnswer() + "\n");
+            }
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("Error! Can't call this method now...");
         }
     }
 
