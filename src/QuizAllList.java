@@ -41,6 +41,9 @@ public class QuizAllList {
             QuizListManager manager = new QuizListManager(list, result);
             result = manager.runQuiz();
         }
+        if (result.getScore() >= 8){
+            
+        }
         return result;
     }
 
