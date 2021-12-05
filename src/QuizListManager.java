@@ -27,7 +27,6 @@ public class QuizListManager {
 
     private void supportRun(Quiz quiz) {
         this.result.addSelectedQuiz(quiz);
-        Cls.clear();
         println(quiz.getProblem());
         String userAnswer = acceptUserAnswer();
         this.result.addAnswer(userAnswer);
@@ -48,6 +47,7 @@ public class QuizListManager {
         }
         Collections.shuffle(integerArrayList);
         Quiz quiz = this.quizList.getQuiz(integerArrayList.get(0));
+        System.out.println("正答率が8割超えたので、応用問題が出現した！\n");
         supportRun(quiz);
         return this.result;
     }
@@ -68,6 +68,7 @@ public class QuizListManager {
     private static void goNextProblem() {
         print("\n次の問題へ [Enter]");
         scanln();
+        Cls.clear();
     }
 
     private static String scanln() {
