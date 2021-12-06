@@ -6,7 +6,7 @@ public class QuizAllList {
 
     public QuizAllList() {
         QuizList quizList = new QuizList();
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= 10; i++) {
             String problem = ReadFiles.readProblem(i);
             String correctAnswer = ReadFiles.readCorrectAnswer(i);
             String explanation = ReadFiles.readExplanation(i);
