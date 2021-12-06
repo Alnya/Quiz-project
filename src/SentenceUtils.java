@@ -23,6 +23,16 @@ public class SentenceUtils {
         System.out.println("正答率が8割超えたので、応用問題が出現した！\n");
     }
 
+    public static void printFinalResult() {
+        System.out.println("---総合結果---\n");
+    }
+
+    public static void printResultProblem(String number, String answer, String correctAnswer) {
+        System.out.println("問題番号" + number);
+        System.out.println("あなたの答え：" + answer + "  正解：" + correctAnswer + "\n");
+    }
+
+
     public static void printBar() {
         println("---------------------------------");
     }

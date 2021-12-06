@@ -26,13 +26,12 @@ public class Result {
     }
 
     public void printResult() {
+        SentenceUtils.printFinalResult();
         try {
-            System.out.println("---‘‡Œ‹‰Ê---\n");
             for (int i = 0; i < this.selectedQuizList.size(); i++) {
                 Quiz quiz = this.selectedQuizList.get(i);
                 String answer = this.answers.get(i);
-                System.out.println("–â‘è”Ô†" + quiz.getName());
-                System.out.println("‚ ‚È‚½‚Ì“š‚¦F" + answer + "  ³‰ğF" + quiz.getCorrectAnswer() + "\n");
+                SentenceUtils.printResultProblem(quiz.getName(), answer, quiz.getCorrectAnswer());
             }
         } catch (IndexOutOfBoundsException e) {
             System.out.println("Error! Can't call this method now...");
