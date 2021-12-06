@@ -3,23 +3,23 @@
 
 ## Tree
 ```
-.
-│  .gitattributes
-│  .gitignore
-│  LICENSE
-│  Quiz-project.iml
-│  README.md
-│
-├─.idea
-│      .gitignore
-│      encodings.xml
-│      misc.xml
-│      modules.xml
-│      runConfigurations.xml
-│      vcs.xml
-│      workspace.xml
-│
-├─answers
+.                                     
+│  .gitattributes                       
+│  .gitignore                           
+│  LICENSE                              
+│  Quiz-project.iml                     
+│  README.md                            
+│                                       
+├─.idea                                 
+│      .gitignore                       
+│      encodings.xml                    
+│      markdown.xml                     
+│      misc.xml                         
+│      modules.xml                      
+│      vcs.xml                          
+│      workspace.xml                    
+│                                       
+├─correct-answers
 ├─explanations
 ├─problems
 └─src
@@ -30,5 +30,7 @@
         Quiz.java
         QuizAllList.java
         QuizList.java
+        QuizListManager.java
+        ReadFiles.java
         Result.java
 ```
