@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         /*
-          Test program of main.
+          The main program.
           read problem, correct-answer and explanation.
           run quiz.
          */
