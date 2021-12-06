@@ -1,6 +1,4 @@
 public class Main {
-    private static Result result;
-
     public static void main(String[] args) {
         /*
           Test program of main.
@@ -10,7 +8,7 @@ public class Main {
         Cls.setTitle();
         Cls.clear();
         QuizAllList quizAllList = new QuizAllList();
-        result = quizAllList.run();
+        Result result = quizAllList.run();
         result.printResult();
     }
 }
