@@ -8,4 +8,12 @@ public class Cls {
             e.printStackTrace();
         }
     }
+
+    public static void setTitle() {
+        try {
+            new ProcessBuilder("cmd", "/c", "title ---The Programming Quiz Game---  (developed by 19AJ)").inheritIO().start().waitFor();
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
