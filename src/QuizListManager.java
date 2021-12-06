@@ -38,6 +38,7 @@ public class QuizListManager {
         scanln();
         printBar();
         println(quiz.getExplanation());
+        goNextProblem();
     }
 
     public Result runSpecialQuiz() {
@@ -49,9 +50,6 @@ public class QuizListManager {
         Quiz quiz = this.quizList.getQuiz(integerArrayList.get(0));
         System.out.println("正答率が8割超えたので、応用問題が出現した！\n");
         supportRun(quiz);
-        print("\n総合結果へ [Enter]");
-        scanln();
-        Cls.clear();
         return this.result;
     }
 
@@ -69,7 +67,7 @@ public class QuizListManager {
     }
 
     private static void goNextProblem() {
-        print("\n次の問題へ [Enter]");
+        print("\n次へ進む [Enter]");
         scanln();
         Cls.clear();
     }
