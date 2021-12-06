@@ -1,4 +1,4 @@
-–â‘è5.‰ğà
+–â‘è005.‰ğà
 
 int[] scores = {90, 80, 60, 50};
 System.out.println(scores[1]);
