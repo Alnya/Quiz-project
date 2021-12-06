@@ -30,12 +30,12 @@ public class QuizListManager {
         println(quiz.getProblem());
         String userAnswer = acceptUserAnswer();
         this.result.addAnswer(userAnswer);
-        printBar();
+        SentenceUtils.printBar();
         judgeAnswer(userAnswer, quiz.getCorrectAnswer());
-        printBar();
-        println("解説へ [Enter]");
+        SentenceUtils.printBar();
+        SentenceUtils.printToExplanation();
         scanln();
-        printBar();
+        SentenceUtils.printBar();
         println(quiz.getExplanation());
         goNextProblem();
     }
@@ -47,40 +47,32 @@ public class QuizListManager {
         }
         Collections.shuffle(integerArrayList);
         Quiz quiz = this.quizList.getQuiz(integerArrayList.get(0));
-        System.out.println("正答率が8割超えたので、応用問題が出現した！\n");
+        SentenceUtils.printToSpecial();
         supportRun(quiz);
         return this.result;
     }
 
     private static String acceptUserAnswer() {
-        print("\n答えを入力してください>>");
+        SentenceUtils.printAcceptUserAnswer();
         return scanln();
     }
 
     private static void judgeAnswer(String userAnswer, String correctAnswer) {
         if (userAnswer.equals(correctAnswer)) {
-            println("\t正解！〇");
+            SentenceUtils.printCorrect();
         } else {
-            println("\t不正解...×");
+            SentenceUtils.printIncorrect();
         }
     }
 
     private static void goNextProblem() {
-        print("\n次へ進む [Enter]");
+        SentenceUtils.printToNext();
         scanln();
         Cls.clear();
     }
 
     private static String scanln() {
         return scanner.nextLine();
-    }
-
-    private static void printBar() {
-        println("---------------------------------");
-    }
-
-    private static void print(Object obj) {
-        System.out.print(obj);
     }
 
     private static void println(Object obj) {
