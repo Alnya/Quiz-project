@@ -20,7 +20,7 @@ public class QuizListManager {
         Collections.shuffle(integerArrayList);
         for (int i = 0; i < 5; i++) {
             Quiz quiz = this.quizList.getQuiz(integerArrayList.get(i));
-            supportRun(quiz);
+            this.supportRun(quiz);
         }
         return this.result;
     }
@@ -48,7 +48,7 @@ public class QuizListManager {
         Collections.shuffle(integerArrayList);
         Quiz quiz = this.quizList.getQuiz(integerArrayList.get(0));
         SentenceUtils.printToSpecial();
-        supportRun(quiz);
+        this.supportRun(quiz);
         return this.result;
     }
 
