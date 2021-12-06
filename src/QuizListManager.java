@@ -21,6 +21,7 @@ public class QuizListManager {
         for (int i = 0; i < 5; i++) {
             Quiz quiz = this.quizList.getQuiz(integerArrayList.get(i));
             supportRun(quiz);
+            goNextProblem();
         }
         return this.result;
     }
@@ -37,7 +38,6 @@ public class QuizListManager {
         scanln();
         printBar();
         println(quiz.getExplanation());
-        goNextProblem();
     }
 
     public Result runSpecialQuiz() {
