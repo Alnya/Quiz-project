@@ -1,8 +1,8 @@
 問題104.解説
 
-a)〇　JVMは「Java Virtual Machine」を略したものです
-b)〇　JREの一部としてJVMもインストールされる
-c)×　JVMはJava仮想マシン（Virtual Machine）で、
+a) o JVMは「Java Virtual Machine」を略したものです
+b) o JREの一部としてJVMもインストールされる
+c) × JVMはJava仮想マシン（Virtual Machine）で、
 実行時に「バイトコードからの変換」や「実行」を行うものです。
 コンパイル時のエラーはJVMが表示したものではありません。
-d)〇　JVMがJavaバイトコードをその環境に応じた実行形式のコードに変換してくれる
+d) o JVMがJavaバイトコードをその環境に応じた実行形式のコードに変換してくれる

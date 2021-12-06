@@ -1,0 +1,27 @@
+問題7.以下のようなコードがあります。
+
+[Test.java]
+public class Test{
+	public static void main(String[] args){
+		xxxx num = 10;
+        switch(num){
+            case 1 : System.out.print("A");
+            break;
+            case 2 : System.out.print("B");
+            break;
+            case 3 : System.out.print("C");
+            break;
+        }
+	}
+}
+
+
+このプログラムを実行したとき、
+"xxxx"に記述するとエラーになるものを
+[選択肢]から1つ選んでください。
+
+[選択肢]
+a) byte
+b) short
+c) int
+d) long
