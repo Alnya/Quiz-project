@@ -36,6 +36,7 @@ public class Result {
         } catch (IndexOutOfBoundsException e) {
             System.out.println("Error! Can't call this method now...");
         }
+        SentenceUtils.printFinalScore(this.getScore(), this.selectedQuizList.size());
     }
 
     public int getScore() {

@@ -32,6 +32,10 @@ public class SentenceUtils {
         System.out.println("あなたの答え：" + answer + "  正解：" + correctAnswer + "\n");
     }
 
+    public static void printFinalScore(int score, int maxScore) {
+        System.out.println("最終スコア：" + score + " / " + maxScore);
+    }
+
 
     public static void printBar() {
         println("---------------------------------");
