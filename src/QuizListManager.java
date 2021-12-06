@@ -49,6 +49,9 @@ public class QuizListManager {
         Quiz quiz = this.quizList.getQuiz(integerArrayList.get(0));
         System.out.println("正答率が8割超えたので、応用問題が出現した！\n");
         supportRun(quiz);
+        print("\n総合結果へ [Enter]");
+        scanln();
+        Cls.clear();
         return this.result;
     }
 
