@@ -7,6 +7,7 @@ public class Main {
           read problem, correct-answer and explanation.
           run quiz.
          */
+        Cls.clear();
         QuizAllList quizAllList = new QuizAllList();
         result = quizAllList.run();
         result.printResult();
