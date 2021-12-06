@@ -1,3 +1,5 @@
+問題203.下のプログラムを実行した時に表示されるのは何か？
+
 public class Main {
 	public static void main(String[] args){
 		String str1 = "a";
@@ -8,6 +10,3 @@ public class Main {
 		System.out.println(str1.compareToIgnoreCase(str3));
 	}
 }
-
-Q.実行した場合、表示されるのは何か
-
