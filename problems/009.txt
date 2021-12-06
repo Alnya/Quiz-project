@@ -1,0 +1,23 @@
+問題9.以下のようなコードがあります。
+
+[Test.java]
+public class Test {
+    public static void main(String[] args) {
+        int i = 0;
+        while (条件) {
+            System.out.print(i);
+            i++;
+        }
+    }
+}
+
+このプログラムを実行したとき、コンソールに、
+0123456789
+と出力されるためにはどのような条件にすればよいか
+[選択肢]から1つ選んでください。
+
+[選択肢]
+a) i < 10
+b) i <= 10
+c) i = 9
+d) i == 9
