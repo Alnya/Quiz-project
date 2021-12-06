@@ -9,5 +9,6 @@ public class Main {
          */
         QuizAllList quizAllList = new QuizAllList();
         result = quizAllList.run();
+        result.printResult();
     }
 }
