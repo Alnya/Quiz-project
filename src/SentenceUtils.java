@@ -42,24 +42,33 @@ public class SentenceUtils {
     }
 
     public static void printTitle() {
-        println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-        println("+                                                                     +");
-        println("+                                                                     +");
-        println("+                                                                     +");
-        println("+                                                                     +");
-        println("+                                                                     +");
-        println("+                                                                     +");
-        println("+                                                                     +");
-        println("+                                                                     +");
-        println("+                                                                     +");
-        println("+                                                                     +");
-        println("+                                                                     +");
-        println("+                                                                     +");
-        println("+                                                                     +");
-        println("+                                                                     +");
-        println("+                                                                     +");
-        println("+                                                                     +");
-        println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        for (int i = 0; i < 5; i++) {
+            println("");
+        }
+        println("                       +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        println("                       +                                                                     +");
+        println("                       +                                                                     +");
+        println("                       +                                                                     +");
+        println("                       +                                                                     +");
+        println("                       +                                                                     +");
+        println("                       +                                                                     +");
+        println("                       +                                                                     +");
+        println("                       +                                                                     +");
+        println("                       +                                                                     +");
+        println("                       +                                                                     +");
+        println("                       +                                                                     +");
+        println("                       +                                                                     +");
+        println("                       +                                                                     +");
+        println("                       +                                                                     +");
+        println("                       +                                                                     +");
+        println("                       +                                                                     +");
+        println("                       +                                                                     +");
+        println("                       +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        for (int i = 0; i < 5; i++) {
+            println("");
+        }
+        println("                                     ----------PRESS ENTER TO START----------");
+        print("                                                          ");
     }
 
     private static void print(Object obj) {
