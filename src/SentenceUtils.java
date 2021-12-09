@@ -41,6 +41,27 @@ public class SentenceUtils {
         println("---------------------------------");
     }
 
+    public static void printTitle() {
+        println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        println("+                                                                     +");
+        println("+                                                                     +");
+        println("+                                                                     +");
+        println("+                                                                     +");
+        println("+                                                                     +");
+        println("+                                                                     +");
+        println("+                                                                     +");
+        println("+                                                                     +");
+        println("+                                                                     +");
+        println("+                                                                     +");
+        println("+                                                                     +");
+        println("+                                                                     +");
+        println("+                                                                     +");
+        println("+                                                                     +");
+        println("+                                                                     +");
+        println("+                                                                     +");
+        println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+    }
+
     private static void print(Object obj) {
         System.out.print(obj);
     }
