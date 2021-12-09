@@ -72,15 +72,15 @@ public class SentenceUtils {
     }
 
     public static void printProgress(int n) {
-        print("Progress:[");
+        print("\n Now Progress:[");
         for (int i = 0; i < n; i++) {
-            print("=");
+            print("==");
         }
         print(">");
-        for (int i = 0; i < 10 - n; i++) {
-            print(" ");
+        for (int i = 0; i < 9 - n; i++) {
+            print("  ");
         }
-        println("]\n");
+        println("]\n\n");
     }
 
     private static void print(Object obj) {
