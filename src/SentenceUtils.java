@@ -54,9 +54,9 @@ public class SentenceUtils {
         println("                       +                                                                     +");
         println("                       +                                                                     +");
         println("                       +                                                                     +");
+        println("                       +                   ---The Programming Quiz Game---                   +");
         println("                       +                                                                     +");
-        println("                       +                                                                     +");
-        println("                       +                                                                     +");
+        println("                       +                        (developed by 19AJ)                          +");
         println("                       +                                                                     +");
         println("                       +                                                                     +");
         println("                       +                                                                     +");
