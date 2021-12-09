@@ -1,11 +1,9 @@
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Scanner;
 
 public class QuizListManager {
     private final QuizList quizList;
     private final Result result;
-    private static final Scanner scanner = new Scanner(System.in);
 
     public QuizListManager(QuizList quizList, Result result) {
         this.quizList = quizList;
@@ -34,7 +32,7 @@ public class QuizListManager {
         judgeAnswer(userAnswer, quiz.getCorrectAnswer());
         SentenceUtils.printBar();
         SentenceUtils.printToExplanation();
-        scanln();
+        ScanUtils.scanln();
         SentenceUtils.printBar();
         println(quiz.getExplanation());
         goNextProblem();
@@ -54,7 +52,7 @@ public class QuizListManager {
 
     private static String acceptUserAnswer() {
         SentenceUtils.printAcceptUserAnswer();
-        return scanln();
+        return ScanUtils.scanln();
     }
 
     private static void judgeAnswer(String userAnswer, String correctAnswer) {
@@ -67,12 +65,8 @@ public class QuizListManager {
 
     private static void goNextProblem() {
         SentenceUtils.printToNext();
-        scanln();
+        ScanUtils.scanln();
         Cls.clear();
-    }
-
-    private static String scanln() {
-        return scanner.nextLine();
     }
 
     private static void println(Object obj) {
