@@ -1,7 +1,9 @@
 # Quiz-project
- This is one of the demonstrations of an experiment we are doing in our university lab.
+
+This is one of the demonstrations of an experiment we are doing in our university lab.
 
 ## Tree
+
 ```
 .                                     
 │  .gitattributes                       
@@ -33,4 +35,6 @@
         QuizListManager.java
         ReadFiles.java
         Result.java
+        ScanUtils.java
+        SentenceUtils.java
 ```
