@@ -24,6 +24,7 @@ public class QuizListManager {
     }
 
     private void supportRun(Quiz quiz) {
+        SentenceUtils.printProgress(this.result.getSelectedQuizList().size());
         this.result.addSelectedQuiz(quiz);
         println(quiz.getProblem());
         String userAnswer = acceptUserAnswer();
