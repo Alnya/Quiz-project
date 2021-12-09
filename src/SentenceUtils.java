@@ -71,6 +71,18 @@ public class SentenceUtils {
         print("                                                          ");
     }
 
+    public static void printProgress(int n) {
+        print("Progress:[");
+        for (int i = 0; i < n; i++) {
+            print("=");
+        }
+        print(">");
+        for (int i = 0; i < 10 - n; i++) {
+            print(" ");
+        }
+        println("]\n");
+    }
+
     private static void print(Object obj) {
         System.out.print(obj);
     }
