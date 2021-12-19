@@ -4,6 +4,14 @@ import java.util.List;
 public class QuizAllList {
     private final List<QuizList> quizAllList = new ArrayList<QuizList>();
 
+    /**
+     * コンストラクタです。
+     * 第一章：問題番号001-010
+     * 第二章：問題番号101-110
+     * 応用問題：問題番号201-203
+     *
+     * それぞれQuizListで管理し、それらを束ねています。
+     */
     public QuizAllList() {
         QuizList quizList = new QuizList();
         for (int i = 1; i <= 10; i++) {
@@ -34,6 +42,11 @@ public class QuizAllList {
         this.quizAllList.add(quizList200);
     }
 
+    /**
+     * QuizAllListで管理しているQuizListの問題を実行するためのメソッド。
+     *
+     * @return Result 成績を管理し、適切に返します。
+     */
     public Result run() {
         Result result = new Result();
         for (int i = 0; i < 2; i++) {
@@ -49,10 +62,23 @@ public class QuizAllList {
         return result;
     }
 
+    /**
+     * QuizListを途中で追加するためのメソッド。
+     * 未使用です。
+     *
+     * @param quizList 追加したいQuizList
+     */
     public void addQuizList(QuizList quizList) {
         this.quizAllList.add(quizList);
     }
 
+    /**
+     * 指定したインデックスのQuizListを取り出すメソッド。
+     * 未使用です。
+     *
+     * @param index 取り出したいQuizListのインデックス
+     * @return QuizList
+     */
     public QuizList getQuizList(int index) {
         return this.quizAllList.get(index);
     }

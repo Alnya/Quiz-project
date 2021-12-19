@@ -27,8 +27,6 @@ This is one of the demonstrations of an experiment we are doing in our universit
 └─src
         Cls.java
         Main.java
-        Printable.java
-        PrintableQuiz.java
         Quiz.java
         QuizAllList.java
         QuizList.java

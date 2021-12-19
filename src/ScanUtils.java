@@ -4,6 +4,12 @@ import java.util.Scanner;
 public class ScanUtils {
     private static final Scanner scanner = new Scanner(System.in);
 
+    /**
+     * 解答入力や、画面遷移のための入力待ちをするためのメソッド。
+     * Ctrl＋Cで強制終了させるため、終了の旨を出力する。
+     *
+     * @return String
+     */
     public static String scanln() {
         try {
             return scanner.nextLine();
